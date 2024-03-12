@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        #color{
+            height: 2cm;
+            width: 3cm;
+            border-radius: 20px;
+            background-color: rgb(255, 0, 0);
+        }
+        #color_containor{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h1{ display: flex;
+            align-items: center;
+            justify-content: center;}
+
+            button{
+                margin: 25px;
+                height: 1cm;
+                width: 2cm;
+                border-radius: 10px;
+                color: white;
+                background-color: black;
+            }
+    </style>
+</head>
+<body>
+    <div><h2>background color changer</h1></div>
+    <div id="color_containor">
+  <input type="color" name="" id="color">
+
+  <button id="btn" onclick="change_color()">change</button>
+</div>
+
+
+  <script>
+    let condom;
+    function change_color(){
+        change_colors= document.getElementById("color").value;
+        console.log(change_colors);
+
+        document.body.style.backgroundColor=change_colors;
+    }
+  </script>
+</body>
+</html>
